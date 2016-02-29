@@ -8,7 +8,7 @@ body {
   font-family: "proxima-nova", sans-serif;
   font-size: 17px;
   line-height: 1.4;
-  height: 100vh;
+  min-height: 100vh;
   color: #444;
   background: whitesmoke;
   display: -webkit-box;
@@ -36,7 +36,9 @@ body {
   -ms-align-items: center;
   -o-align-items: center;
   align-items: center;
-  -ms-flex-align: center; }
+  -ms-flex-align: center;
+  margin: 0;
+  padding: 25px 25px 50px; }
 
 h1 {
   font-weight: 600;
