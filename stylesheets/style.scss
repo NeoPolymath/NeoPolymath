@@ -1,0 +1,71 @@
+@import "bourbon", "neat";
+
+// COLORS
+$white: whitesmoke;
+$black: #444;
+
+body {
+  font-family: "proxima-nova", sans-serif;
+  font-size: 17px;
+  line-height: 1.4;
+  height: 100vh;
+  color: $black;
+  background: $white;
+  @include display(flex);
+  @include flex-direction(row);
+  @include align-items(center);
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 27px;
+  margin-bottom: 0;
+}
+
+p {
+  font-weight: 300;
+}
+
+a {
+  font-weight: 600;
+  color: $black;
+  text-decoration: none;
+  border-bottom: 1px solid $black;
+
+  &:visited {
+    color: $black;
+  }
+
+  &:hover,
+  &:active {
+    color: lighten($black, 45%);
+    border-bottom: 1px solid lighten($black, 45%);
+  }
+}
+
+strong {
+  font-weight: 600;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+}
+
+.logo {
+
+  svg {
+    max-width: 200px;
+
+    path {
+      fill: $black;
+    }
+  }
+
+  span {
+    display: block;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+}
