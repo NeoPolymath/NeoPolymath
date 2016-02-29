@@ -37,6 +37,7 @@ body {
   -o-align-items: center;
   align-items: center;
   -ms-flex-align: center;
+  text-shadow: 1px 1px #fff;
   margin: 0;
   padding: 25px 25px 50px; }
 
