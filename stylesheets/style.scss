@@ -3,6 +3,7 @@
 // COLORS
 $white: whitesmoke;
 $black: #444;
+$color-primary: #5255C4;
 
 body {
   font-family: "proxima-nova", sans-serif;
@@ -11,9 +12,9 @@ body {
   min-height: 100vh;
   color: $black;
   background: $white;
-  @include display(flex);
-  @include flex-direction(row);
-  @include align-items(center);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   text-shadow: 1px 1px #fff;
 
   margin: 0;
@@ -30,20 +31,17 @@ p {
   font-weight: 300;
 }
 
-a {
+a,
+a:visited {
   font-weight: 700;
-  color: $black;
+  color: $color-primary;
   text-decoration: none;
   border-bottom: 1px solid $black;
 
-  &:visited {
-    color: $black;
-  }
-
   &:hover,
   &:active {
-    color: lighten($black, 45%);
-    border-bottom: 1px solid lighten($black, 45%);
+    color: lighten($color-primary, 15%);
+    border-bottom: 1px solid lighten($color-primary, 20%);
   }
 }
 
@@ -59,10 +57,11 @@ strong {
 .logo {
 
   svg {
-    max-width: 200px;
+    max-width: 300px;
+    width: 100%;
 
     path {
-      fill: $black;
+      fill: $color-primary;
     }
   }
 
