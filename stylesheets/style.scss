@@ -13,7 +13,7 @@ body {
   color: $black;
   background: $white;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   text-shadow: 1px 1px #fff;
 
@@ -71,4 +71,12 @@ strong {
     height: 1px;
     overflow: hidden;
   }
+}
+
+footer {
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+  font-size: 13px;
 }
